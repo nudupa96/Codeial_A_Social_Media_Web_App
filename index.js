@@ -6,6 +6,10 @@ const port = 8000;
 //all the get,post etc will be handled by this module - This is a MW
 app.use('/', require('./routes'));//arg1-for any further urls,arg2- route the routes to index.js of routes
 
+//Setup the view engine (name and value pair)
+app.set('view engine', 'ejs');
+app.set('views', './views');
+
 app.listen(port, function(err)
 {
     if(err)
