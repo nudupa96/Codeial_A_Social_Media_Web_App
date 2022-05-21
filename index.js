@@ -1,6 +1,11 @@
 const express = require('express');
 const app = express();
 const port = 8000;
+//import the express-ejs-layouts lib
+const expressLayouts = require('express-ejs-layouts');
+
+//need to use ejs layouts lib before routes  is required
+app.use(expressLayouts);
 
 //now we need to tell the app to use the routes folder,ie,
 //all the get,post etc will be handled by this module - This is a MW
