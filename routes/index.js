@@ -17,7 +17,7 @@ router.use('/users', require('./users')); //handles all /users requests
 //router for posts 
 router.use('/posts', require('./posts'));
 
-console.log('Router loaded');//to give a message(note: everytime thsi file is changed, server restarts)
+console.log('Main Router loaded');//to give a message(note: everytime thsi file is changed, server restarts)
 
 //to make it available to main index.js we need to export it
 module.exports = router;
